@@ -1,34 +1,35 @@
 /* Adding colors to different titles and subtitles */
 h1.title {
-    color:navy
+    color:navy;
+    text-align: center;
 }
 
 h2.subtitle {
-    color:#d1139b
+    color:#d1139b;
 }
 
 h2.sub2{
-    color:rgb(255, 99, 71)
+    color:rgb(255, 99, 71);
 }
 
 h3.sub3{
-    color:hsl(281, 71%, 33%)
+    color:hsl(281, 71%, 33%);
 }
 
 h3#backlog {
-    color: color(from hsl(249, 58%, 47%) xyz x y z)
+    color: color(from hsl(249, 58%, 47%) xyz x y z);
 }
 
 h3#updates {
-    color: color-mix(in srgb, #1a869e 100%, white)
+    color: color-mix(in srgb, #1a869e 100%, white);
 }
 
 * {
-    margin: 10
+    margin: 10;
 }
 
 div {
-    background-color: yellow
+    background-color: yellow;
 }
 
 :root {
@@ -38,5 +39,40 @@ div {
 
 h3#actionitems{
 
-    color: var(--brown, blue)
+    color: var(--brown, blue);
 }
+
+section.b1{
+    max-width: 800px;
+    height: 250px;
+}
+
+section.b2{
+    width: 450pt;
+}
+
+section.b3{
+    min-width: 100pc;
+}
+
+p.al {
+    margin: 0;
+    background-image: repeating-linear-gradient(
+      to top,
+      lightskyblue 0 2px,
+      transparent 2px 1lh
+    );
+}
+
+div.webfont {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3.ag {
+    text-decoration-line: overline underline;
+    text-decoration-color: purple;
+    text-align: center;
+}
+  
