@@ -1,1 +1,42 @@
+/* Adding colors to different titles and subtitles */
+h1.title {
+    color:navy
+}
 
+h2.subtitle {
+    color:#d1139b
+}
+
+h2.sub2{
+    color:rgb(255, 99, 71)
+}
+
+h3.sub3{
+    color:hsl(281, 71%, 33%)
+}
+
+h3#backlog {
+    color: color(from hsl(249, 58%, 47%) xyz x y z)
+}
+
+h3#updates {
+    color: color-mix(in srgb, #1a869e 100%, white)
+}
+
+* {
+    margin: 10
+}
+
+div {
+    background-color: yellow
+}
+
+:root {
+    --blue: #0b2350;
+    --brown: #b56310;
+}
+
+h3#actionitems{
+
+    color: var(--brown, blue)
+}
