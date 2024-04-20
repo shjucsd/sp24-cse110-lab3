@@ -75,4 +75,95 @@ h3.ag {
     text-decoration-color: purple;
     text-align: center;
 }
+section.comm {
+    margin:auto
+}
+
+section.aud{
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+    padding: 0 30px 40px 4em;
+    position: relative;
+}
+
+section.vid{
+    border-color: rebeccapurple;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10pt;
+    background-color: lightgray;
+    margin: 40px 30px 40px 4em;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 4em;
+}
+
+ul.links {
+    display: block;
+    background-color: rgb(119, 237, 46);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1em 2em;
+    position: sticky;
+}
+
+ul.links a:hover {
+    background-color: rgb(66 28 40);
+    color: #ffffff;
+}
+
+ol.blg {
+    display: inline-block;
+    background-color: rgba(15, 248, 229, 0.68);
+    color: #1a28a9;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+
+footer.ft{
+    position: relative;
+}
+
+ul.at{
+  display: flex;
+  
+  flex-flow: row wrap;
+  flex-basis: content;
+  flex-grow: 4;
+  column-gap: 1px;
+  justify-content: space-evenly;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li.flit {
+  background: tomato;
+  padding: 5px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 80px 50px;
+    grid-gap: 10px;
+}
+
+.cmc{
+    background-color: #aecff2; 
+    padding: 10px; 
+    border: 2px solid #051447; 
+    text-align: center; 
+}
   
