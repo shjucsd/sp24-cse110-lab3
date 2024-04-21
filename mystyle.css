@@ -12,7 +12,7 @@ h2.sub2{
     color:rgb(255, 99, 71);
 }
 
-h3.sub3{
+sub3{
     color:hsl(281, 71%, 33%);
 }
 
@@ -64,10 +64,30 @@ p.al {
     );
 }
 
-div.webfont {
+h2 ~ p {
     font-family: "Jersey 20", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color:hsl(281, 71%, 33%)
+}
+
+p + img {
+    width: 350px;
+    height: 200px;
+}
+
+
+
+ul > li {
+    font-size: 18px;
+}
+
+h3:has(+ audio) {
+    background-color: antiquewhite;
+}
+
+h3:has(+ video) {
+    background-color: antiquewhite;
 }
 
 h3.ag {
@@ -81,7 +101,7 @@ section.comm {
 
 section.aud{
     border: 5px solid rebeccapurple;
-    background-color: lightgray;
+    background-color: rgb(236, 23, 94);
     margin-top: 40px;
     margin-right: 30px;
     margin-bottom: 40px;
@@ -95,7 +115,7 @@ section.vid{
     border-width: 5px;
     border-style: solid;
     border-radius: 10pt;
-    background-color: lightgray;
+    background-color: rgb(106, 10, 84);
     margin: 40px 30px 40px 4em;
     padding-top: 0;
     padding-right: 30px;
@@ -117,6 +137,10 @@ ul.links a:hover {
     color: #ffffff;
 }
 
+ul.links a:active {
+    background-color: rgb(225, 13, 13);
+}
+
 ol.blg {
     display: inline-block;
     background-color: rgba(15, 248, 229, 0.68);
@@ -125,19 +149,31 @@ ol.blg {
     padding: 1em 2em;
 }
 
-footer.ft{
+footer[class="ft"] {
     position: relative;
 }
 
+.rep {
+    font-family: system-ui;
+    font-size: 1.2rem;
+    & > a {
+      color: rgb(8, 8, 134);
+      &:hover,
+      &:focus {
+        color: ivory;
+        background-color: rgb(50, 147, 164);
+      }
+    }
+  }
+
 ul.at{
   display: flex;
-  
   flex-flow: row wrap;
+  /* flex-wrap: wrap; */
   flex-basis: content;
   flex-grow: 4;
   column-gap: 1px;
   justify-content: space-evenly;
-  
   padding: 0;
   margin: 0;
   list-style: none;
@@ -151,19 +187,27 @@ li.flit {
   color: white;
   font-weight: bold;
   text-align: center;
+
 }
 
 .cm {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: 80px 50px;
+    grid-template-columns: repeat(autofit, minmax(200px, 1fr)); 
+    /* grid-template-rows: 80px 50px; */
     grid-gap: 10px;
 }
 
-.cmc{
+.cmc1, .cmc2, .cmc3{
     background-color: #aecff2; 
     padding: 10px; 
     border: 2px solid #051447; 
-    text-align: center; 
+    text-align: center;  
+}
+
+@media screen and (width: 600px) {
+    body {
+        background-color: lightblue;
+        color: white;
+    }
 }
   
