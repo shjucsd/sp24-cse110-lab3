@@ -25,7 +25,7 @@ h3#updates {
 }
 
 * {
-    margin: 10;
+    border-width: 3px;
 }
 
 div {
@@ -187,7 +187,7 @@ li.flit {
   color: white;
   font-weight: bold;
   text-align: center;
-
+  flex: 1;
 }
 
 .cm {
