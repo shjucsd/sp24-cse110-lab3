@@ -1,8 +1,5 @@
 /* Adding colors to different titles and subtitles */
-h1.title {
-    color:navy;
-    text-align: center;
-}
+
 
 h2.subtitle {
     color:#d1139b;
@@ -192,7 +189,8 @@ li.flit {
 
 .cm {
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(200px, 1fr)); 
+    /* grid-template-columns: repeat(3, 200px, 1fr);  */
+    grid-template-columns: repeat(auto-fill, 200px);
     /* grid-template-rows: 80px 50px; */
     grid-gap: 10px;
 }
