@@ -32,5 +32,5 @@ Start with a check in question and discuss if there are any questions before beg
 ## Action Items 
 Add action items that you create during meeting and check off boxes as you make progress
         
-[x] (Type your action, assign to someone)
-[] ( )
+- [x] (Type your action, assign to someone)
+- [] ( )
